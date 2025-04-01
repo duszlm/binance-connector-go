@@ -41,7 +41,8 @@ func (s *accountTestSuite) TestGetAccountInfo() {
 			],
 			"permissions": [
 				"SPOT"
-			]
+			],
+			"uid": 354937868
   }`)
 	s.mockDo(data, nil)
 	defer s.assertDo()
@@ -75,6 +76,7 @@ func (s *accountTestSuite) TestGetAccountInfo() {
 			},
 		},
 		Permissions: []string{"SPOT"},
+		Uid:         354937868,
 	}
 	s.assertAccountEqual(e, res)
 }

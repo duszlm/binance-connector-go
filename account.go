@@ -1654,6 +1654,7 @@ type AccountResponse struct {
 	AccountType      string    `json:"accountType"`
 	Balances         []Balance `json:"balances"`
 	Permissions      []string  `json:"permissions"`
+	Uid              uint64    `json:"uid"`
 }
 
 // Balance define user balance of your account
