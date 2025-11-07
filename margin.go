@@ -423,21 +423,21 @@ type MarginAccountNewOrderResponseRESULT struct {
 
 // Create MarginAccountNewOrderResponseFULL
 type MarginAccountNewOrderResponseFULL struct {
-	Symbol                string  `json:"symbol"`
-	OrderId               int64   `json:"orderId"`
-	ClientOrderId         string  `json:"clientOrderId"`
-	TransactTime          uint64  `json:"transactTime"`
-	Price                 string  `json:"price"`
-	OrigQty               string  `json:"origQty"`
-	ExecutedQty           string  `json:"executedQty"`
-	CummulativeQuoteQty   string  `json:"cummulativeQuoteQty"`
-	Status                string  `json:"status"`
-	TimeInForce           string  `json:"timeInForce"`
-	Type                  string  `json:"type"`
-	Side                  string  `json:"side"`
-	MarginBuyBorrowAmount float64 `json:"marginBuyBorrowAmount"`
-	MarginBuyBorrowAsset  string  `json:"marginBuyBorrowAsset"`
-	IsIsolated            bool    `json:"isIsolated"`
+	Symbol                string `json:"symbol"`
+	OrderId               int64  `json:"orderId"`
+	ClientOrderId         string `json:"clientOrderId"`
+	TransactTime          uint64 `json:"transactTime"`
+	Price                 string `json:"price"`
+	OrigQty               string `json:"origQty"`
+	ExecutedQty           string `json:"executedQty"`
+	CummulativeQuoteQty   string `json:"cummulativeQuoteQty"`
+	Status                string `json:"status"`
+	TimeInForce           string `json:"timeInForce"`
+	Type                  string `json:"type"`
+	Side                  string `json:"side"`
+	MarginBuyBorrowAmount string `json:"marginBuyBorrowAmount"`
+	MarginBuyBorrowAsset  string `json:"marginBuyBorrowAsset"`
+	IsIsolated            bool   `json:"isIsolated"`
 	Fills                 []struct {
 		Price           string `json:"price"`
 		Qty             string `json:"qty"`
