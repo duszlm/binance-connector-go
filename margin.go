@@ -530,7 +530,7 @@ func (s *MarginAccountCancelOrderService) Do(ctx context.Context, opts ...Reques
 type MarginAccountCancelOrderResponse struct {
 	Symbol              string `json:"symbol"`
 	IsIsolated          bool   `json:"isIsolated"`
-	OrderId             int    `json:"orderId"`
+	OrderId             string `json:"orderId"`
 	OrigClientOrderId   string `json:"origClientOrderId"`
 	ClientOrderId       string `json:"clientOrderId"`
 	Price               string `json:"price"`
